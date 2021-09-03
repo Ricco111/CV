@@ -1,0 +1,149 @@
+.allBars {
+	width       : 21cm;
+	min-height  : 29.7cm;
+	font-family : 'Arimo';
+	color       : rgb(117, 116, 116);
+	font-size   : 9px;
+	margin      : 10px auto;
+	/*border    :solid;
+	border-width: 1px;*/
+}
+
+.printerIcon {
+	float : right;
+	cursor: pointer;
+}
+
+@media print {
+	.printerIcon {
+		display: none;
+	}
+}
+
+.printerIcon:hover {
+	background-color: #115244;
+}
+
+.name {
+	font-size         : 40px;
+	font-family       : 'Arimo';
+	width             : 21cm;
+	margin            : 10px auto;
+	font-weight       : bold;
+	color             : #115244;
+	float             : left;
+	/*background-color: yellow;*/
+
+}
+
+.leftBar {
+	/*background-color: rgb(206, 89, 89);*/
+	width : 5cm;
+	float : left;
+	margin: 10px auto;
+	position: relative;
+}
+
+.rightBar {
+	/*background-color: rgb(39, 128, 79);*/
+	float : right;
+	width : 16cm;
+	margin: 10px auto;
+}
+
+.headings {
+	border-bottom-style: solid;
+	border-color       : #bdc4c2;
+	margin             : 5px;
+	padding-top         : 20px;
+	font-size          : 22px;
+	font-weight        : bold;
+	color              : #176864;
+	border-width       : 1px;
+	clear              : both;
+
+}
+
+.works {
+	font-size         : 14px;
+	margin-left       : 10px;
+	margin-top        : 10px;
+	width             : 75%;
+	float             : left;
+	line-height       : 0.6cm;
+	/*background-color: aqua;*/
+
+
+}
+
+.dates {
+	font-size         : 14px;
+	margin-left       : 10px;
+	margin-top        : 10px;
+	width             : 20%;
+	float             : left;
+	line-height       : 0.6cm;
+	/*background-color: aquamarine;*/
+
+}
+
+.text {
+	font-size  : 14px;
+	margin-left: 10px;
+	margin-top : 10px;
+	line-height: 0.6cm;
+}
+
+.linkGit {
+	float: left;
+}
+
+.linkIcon {
+	width        : 2.4cm;
+	height       : 1cm;
+	font-size    : 25px;
+	margin-bottom: 10px;
+	margin-top   : 10px;
+	text-align   : center;
+}
+
+.linkGit:hover {
+	color: #176864;
+}
+
+.linkLinkedIn {
+	float: right;
+}
+
+.linkLinkedIn:hover {
+	color: #176864;
+}
+
+.kla {
+	font-size  : 14px;
+	margin-left: 10px;
+	line-height: 0.6cm;
+	left: 0;
+	width      : 16cm;
+	position: absolute;
+	padding:10px 0;
+	top: calc(100% + 20px)
+}
+
+@media print{
+	.kla{
+		position: fixed;
+		bottom: 0;
+		top: auto;
+	}
+}
+
+
+
+a {
+	color: inherit;
+}
+
+.clearfix {
+	clear: both;
+}
