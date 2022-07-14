@@ -10,8 +10,10 @@
 }
 
 .printerIcon {
+	color : rgb(117, 116, 116);
 	float : right;
 	cursor: pointer;
+	
 }
 
 @media print {
@@ -21,19 +23,47 @@
 }
 
 .printerIcon:hover {
-	background-color: #115244;
+	color: #115244;
+	
+}
+
+.ang {
+	color : rgb(117, 116, 116);
+	float        : right;
+	cursor       : pointer;
+	margin: 0px;
+	font-size         : 20px;
+}
+@media ang {
+	.ang {
+		display: none;
+	}
 }
 
 .name {
 	font-size         : 40px;
 	font-family       : 'Arimo';
+	height            : 50px;
 	width             : 21cm;
-	margin            : 10px auto;
+	/*margin            : 10px auto;*/
 	font-weight       : bold;
 	color             : #115244;
 	float             : left;
 	/*background-color: yellow;*/
 
+}
+
+.tools{
+	position: relative;
+	float : left;
+}
+.stars{
+	float : right;
+	color : #115244;
+	font-size  : 8px;
+	margin-right: 10px;
+	margin-top : 10px;
+	line-height: 0.6cm;
 }
 
 .leftBar {
@@ -55,7 +85,7 @@
 	border-bottom-style: solid;
 	border-color       : #bdc4c2;
 	margin             : 5px;
-	padding-top         : 20px;
+	padding-top        : 5px;
 	font-size          : 22px;
 	font-weight        : bold;
 	color              : #176864;
@@ -74,6 +104,14 @@
 	/*background-color: aqua;*/
 
 
+}
+
+.desc {
+	font-size         : 14px;
+	
+	margin-left       : 10px;
+	margin-top        : 10px;
+	line-height       : 0.6cm;
 }
 
 .dates {
@@ -95,17 +133,25 @@
 }
 
 .linkGit {
-	float: left;
-}
-
-.linkIcon {
+	float        : left;
+	cursor       : pointer;
 	width        : 2.4cm;
 	height       : 1cm;
 	font-size    : 25px;
 	margin-bottom: 10px;
 	margin-top   : 10px;
 	text-align   : center;
+	color       : rgb(117, 116, 116);
 }
+
+/*.linkIcon {
+	width        : 2.4cm;
+	height       : 1cm;
+	font-size    : 25px;
+	margin-bottom: 10px;
+	margin-top   : 10px;
+	text-align   : center;
+}*/
 
 .linkGit:hover {
 	color: #176864;
@@ -113,6 +159,13 @@
 
 .linkLinkedIn {
 	float: right;
+	width        : 2.4cm;
+	height       : 1cm;
+	font-size    : 25px;
+	margin-bottom: 10px;
+	margin-top   : 10px;
+	text-align   : center;
+	color       : rgb(117, 116, 116);
 }
 
 .linkLinkedIn:hover {
@@ -120,11 +173,11 @@
 }
 
 .kla {
-	font-size  : 8px;
+	font-size  : 10px;
 	margin-left: 10px;
 	
 	left: 0;
-	width      : 21cm;
+	/*width      : 21cm;*/
 	position: absolute;
 	padding:10px 0;
 	top: calc(100% + 20px);
